@@ -13,29 +13,6 @@
 	</style>
 </head>
 <body>
-<h1>Hey</h1>
-<p>Lorem ipsum dolor sit amet consectetur si la retu rectusic nupoti tryi kule jun hexen meti.</p>
-<input type="submit" name="submit" id="submit">
-<script type="text/javascript">
-	
-	function getFullscreenElement(){
-		return document.fulllscreenElement
-		|| document.webkitFullscreenElement
-		|| document.mozFullscreenElement
-		|| document.msFullscreenElement;
-	}
-
-	function toggleFullscreen(){
-		if (getFullscreenElement()) {
-			document.exitFullscreen();
-		} else {
-			document.documentElement.requestFullscreen().catch(console.log);
-		}
-	}
-	const x = document.getElementById("submit");
-	x.addEventListener("click", () => {toggleFullscreen()});
-
-</script>
 <script> function requestFullScreen() {
 
   var el = document.body;
@@ -63,5 +40,29 @@
 
 </script>
 <a href="#" onClick="requestFullScreen();"> click </a>
+<h1>Hey</h1>
+<p>Lorem ipsum dolor sit amet consectetur si la retu rectusic nupoti tryi kule jun hexen meti.</p>
+<input type="submit" name="submit" id="submit">
+<script type="text/javascript">
+	
+	function getFullscreenElement(){
+		return document.fulllscreenElement
+		|| document.webkitFullscreenElement
+		|| document.mozFullscreenElement
+		|| document.msFullscreenElement;
+	}
+
+	function toggleFullscreen(){
+		if (getFullscreenElement()) {
+			document.exitFullscreen();
+		} else {
+			document.documentElement.requestFullscreen().catch(console.log);
+		}
+	}
+	const x = document.getElementById("submit");
+	x.addEventListener("click", () => {toggleFullscreen()});
+
+</script>
+
 </body>
 </html>
